@@ -6,7 +6,7 @@ let weather = require('openweather-apis')
 let qty = require('js-quantities')
 
 const emojis = {
-  '01d': '☀️',
+  '01d': "☀️",
   '02d': '⛅️',
   '03d': '☁️',
   '04d': '☁️',
@@ -34,7 +34,7 @@ weather.setAPPID(WEATHER_API_KEY)
 weather.getWeatherOneCall(function (err, data) {
   if (err) console.log(err)
 
-  const degF = Math.round(data.daily[0].temp.max)
+  const degF = Math.round(data.daily[0].temp.day)
   const degC = Math.round(qty(`${degF} tempF`).to('tempC').scalar)
   const icon = data.daily[0].weather[0].icon
 
