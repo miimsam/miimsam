@@ -248,9 +248,9 @@
 
   </g>
 
-  <!-- Hi, I'm Meysam -->
+  <!-- Hey, I'm Meysam -->
   <g transform="translate(10, 0)" class="msg-1 bubble">
-    <rect width="150" height="42" rx="18.0355" />
+    <rect width="159" height="42" rx="18.0355" />
     <text x="15" y="27">Hey, I'm Meysam</text>
   </g>
 
